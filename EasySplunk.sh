@@ -1,14 +1,17 @@
 #! /bin/bash
 # @Author: Patrick Hastings
-# @Version: 1.0.0
+# @AppVersion: 1.0.0
+# @PythonVersion: 3.6.x
 # @Title: SplunkEasyRootConsole
 ACCESSKEY = ""
 SECRETKEY = ""
 REGION = ""
 # ------------------------------
-echo "Easy Splunk setup"
+# Region listings here
+echo "Easy Splunk setup - 1.0.0 "
 printf "We are assuming you have python, \n and therego pip installed"
-command -v pip
+echo " This version of the software is intended for Splunk on AWS"
+command -v pip3
 if [ -z "$ACCESSKEY"]; then
     read -p "Enter AWS Access key ID:" ACCESSKEY
 fi

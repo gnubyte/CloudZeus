@@ -1,0 +1,61 @@
+__module__ = "boto3.resources.factory"
+root_device_type = <property 0x1062ceb38; len=0>
+private_dns_name = <property 0x1062d01d8; len=0>
+__dict__ = <getset_descriptor 0x10486e558; len=0>
+image = <property 0x1062ce638; len=0>
+ramdisk_id = <property 0x1062ce908; len=0>
+__class__ = <getset_descriptor 0x1035663f0; len=0>
+spot_instance_request_id = <property 0x1062ce9f8; len=0>
+meta = <boto3.resources.base.ResourceMeta 0x106295c18; len=1>
+network_interfaces_attribute = <property 0x1062cebd8; len=0>
+hypervisor = <property 0x1062ced68; len=0>
+__weakref__ = <getset_descriptor 0x10486e5a0; len=0>
+id = <property 0x1062da318; len=0>
+security_groups = <property 0x1062cea48; len=0>
+subnet = <property 0x1062ce4f8; len=0>
+state_reason = <property 0x1062ce8b8; len=0>
+monitoring = <property 0x1062d03b8; len=0>
+classic_address = <property 0x1062ce5e8; len=0>
+subnet_id = <property 0x1062ceef8; len=0>
+ebs_optimized = <property 0x1062cee08; len=0>
+iam_instance_profile = <property 0x1062cec28; len=0>
+platform = <property 0x1062d0228; len=0>
+state = <property 0x1062ce9a8; len=0>
+key_pair = <property 0x1062ce548; len=0>
+source_dest_check = <property 0x1062cea98; len=0>
+placement_group = <property 0x1062ce688; len=0>
+__init_subclass__ = <classmethod_descriptor 0x103566288; len=0>
+client_token = <property 0x1062cedb8; len=0>
+virtualization_type = <property 0x1062ce6d8; len=0>
+sriov_net_support = <property 0x1062ce958; len=0>
+root_device_name = <property 0x1062ceae8; len=0>
+public_ip_address = <property 0x1062d0048; len=0>
+__doc__ <0x103569650> = "The most base type"
+tags = <property 0x1062ce1d8; len=0>
+kernel_id = <property 0x1062d02c8; len=0>
+key_name = <property 0x1062d0368; len=0>
+image_id = <property 0x1062d04a8; len=0>
+__subclasshook__ = <classmethod_descriptor 0x1035661f8; len=0>
+meta <0x10373c6c0> = None
+vpc = <property 0x1062ce278; len=0>
+public_dns_name = <property 0x1062d00e8; len=0>
+__module__ <0x1035651f0> = "boto3.resources.base"
+instance_lifecycle = <property 0x1062cecc8; len=0>
+block_device_mappings = <property 0x1062ceea8; len=0>
+elastic_gpu_associations = <property 0x1062ceb88; len=0>
+_id = "i-01ecaf66388ecabd4"
+placement = <property 0x1062d0188; len=0>
+ami_launch_index = <property 0x1062d04f8; len=0>
+vpc_addresses = <property 0x1062ce4a8; len=0>
+state_transition_reason = <property 0x1062cef98; len=0>
+network_interfaces = <property 0x1062ce598; len=0>
+launch_time = <property 0x1062d0318; len=0>
+__doc__ = None
+instance_id = <property 0x1062d06d8; len=0>
+instance_type = <property 0x1062d0138; len=0>
+architecture = <property 0x1062cee58; len=0>
+volumes = <property 0x1062ce778; len=0>
+ena_support = <property 0x1062ced18; len=0>
+private_ip_address = <property 0x1062d0408; len=0>
+vpc_id = <property 0x1062cef48; len=0>
+product_codes = <property 0x1062d0098; len=0>
