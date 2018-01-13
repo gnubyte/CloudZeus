@@ -12,13 +12,6 @@
 import boto3
 from pprint import pprint
 
-#class imageAMI():
-#    
-#    def __init__():
-#        ec2 = boto3.resource('ec2')
-#        image = ec2.Image('id')
-#!/usr/bin/env python
-
 ec2 = boto3.resource('ec2')
 for instance in ec2.instances.all():
     #print(repr(instance)) #stackdatas short...print dict if avail as single string rep
@@ -43,5 +36,9 @@ class awsEC2:
     
     def retrieve_instance(self, **kwargs):
         '''retrieves single EC2 instance from AWS and sets it'''
-        pass
+        result = {
+            'a': lambda x: x * 5,
+          'b': lambda x: x + 7,
+          'c': lambda x: x - 2
+        }[value](x)
         
