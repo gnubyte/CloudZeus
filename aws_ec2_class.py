@@ -13,32 +13,33 @@ import boto3
 from pprint import pprint
 
 ec2 = boto3.resource('ec2')
-for instance in ec2.instances.all():
+#for instance in ec2.instances.all():
     #print(repr(instance)) #stackdatas short...print dict if avail as single string rep
     #pprint (vars(instance)) # need this instance's attributes....
-    print (instance.id, instance.state, instance.tags)
+#    print (instance.id, instance.state, instance.tags)
 
 #instance_id = sys.argv[2]
 
 
-#NewSH = ec2.create_instances(
-#    ImageId='ami-f2ce648a',
-#    MinCount=1,
-#    MaxCount=1,
-#    InstanceType='t2.micro')
+NewSH = ec2.create_instances(
+    ImageId='ami-f2ce648a',
+    MinCount=1,
+    MaxCount=1,
+    InstanceType='t2.micro')
 # leaving out tags....Proof of concept first
-#print (NewSH[0].id)
+ec2.create_tags(DryRun=False,
+                Resources=[NewSH[0].id],
+                Tags=[{'Key':'Name',
+                       'Value':'PH-StopTestAutoCloud-IDX-01'},
+                      {'Key': 'Owner',
+                       'Value':'Patrick Hastings'},
+                      {'Key':'Date',
+                       'Value':'01-16-2018 9:01PM EST'}])
+
+
+
+print (NewSH[0].id)
 response = ec2.start_instances(DryRun=False)
 print (response)
 # InstanceIds=[instance_id], 
-class awsEC2:
-    '''a singular EC2 instance object'''
-    
-    def retrieve_instance(self, **kwargs):
-        '''retrieves single EC2 instance from AWS and sets it'''
-        result = {
-            'a': lambda x: x * 5,
-          'b': lambda x: x + 7,
-          'c': lambda x: x - 2
-        }[value](x)
-        
+
